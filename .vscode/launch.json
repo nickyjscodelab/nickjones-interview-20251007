@@ -1,0 +1,51 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "Launch Backend (.NET API)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "dotnet-build-backend",
+      "program": "${workspaceFolder}/backend/Workflow.Api/bin/Debug/net8.0/Workflow.Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/backend/Workflow.Api",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "https://localhost:7170;http://localhost:5100"
+      }
+    },
+    {
+      "name": "Launch Frontend (Vue.js)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev",
+      "cwd": "${workspaceFolder}/frontend/workflow-ui",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+
+  ],
+  "compounds": [
+    {
+      "name": "Launch Full Stack Application",
+      "configurations": [
+        "Launch Backend (.NET API)",
+        "Launch Frontend (Vue.js)"
+      ],
+      "stopAll": true,
+      "presentation": {
+        "hidden": false,
+        "group": "Full Stack",
+        "order": 1
+      }
+    }
+  ]
+}

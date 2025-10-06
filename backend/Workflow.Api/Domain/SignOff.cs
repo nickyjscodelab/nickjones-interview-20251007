@@ -1,10 +1,14 @@
 // Domain/Entities.cs
+using System.Text.Json.Serialization;
+
 namespace Demo.Workflow.Domain;
 
 public class SignOff
 {
     public int Id { get; set; }
     public int ProjectRequestId { get; set; }
+    
+    [JsonIgnore]
     public ProjectRequest ProjectRequest { get; set; } = default!;
     public Role Role { get; set; }
     public string ReviewerName { get; set; } = default!;

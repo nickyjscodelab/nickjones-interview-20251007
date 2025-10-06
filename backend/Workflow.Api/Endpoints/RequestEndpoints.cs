@@ -17,17 +17,42 @@ public static class RequestEndpoints
             return pr is null ? Results.NotFound() : Results.Ok(pr);
         });
 
-        group.MapPost("/", async (IWorkflowService svc, ProjectRequest dto, CancellationToken ct) =>
-            Results.Created($"/api/requests", await svc.CreateRequestAsync(dto, ct)));
-
-        group.MapPut("/{id:int}/status", async (IWorkflowService svc, int id, RequestStatus status, CancellationToken ct) =>
+        group.MapPost("/", async (IWorkflowService svc, CreateProjectRequestDto dto, CancellationToken ct) =>
         {
-            await svc.SetStatusAsync(id, status, ct);
+            var request = new ProjectRequest
+            {
+                Title = dto.Title,
+                Description = dto.Description,
+                Priority = dto.Priority,
+                RequestedBy = dto.RequestedBy,
+                DueUtc = dto.DueUtc,
+                CreatedUtc = DateTime.UtcNow,
+                Status = RequestStatus.Draft
+            };
+            var created = await svc.CreateRequestAsync(request, ct);
+            return Results.Created($"/api/requests/{created.Id}", created);
+        });
+
+        group.MapPut("/{id:int}/status", async (IWorkflowService svc, int id, RequestStatusUpdateDto dto, CancellationToken ct) =>
+        {
+            await svc.SetStatusAsync(id, dto.Status, ct);
             return Results.NoContent();
         });
 
-        group.MapPost("/{id:int}/signoffs", async (IWorkflowService svc, int id, SignOff dto, CancellationToken ct) =>
-            Results.Created($"/api/requests/{id}", await svc.AddSignOffAsync(id, dto, ct)));
+        group.MapPost("/{id:int}/signoffs", async (IWorkflowService svc, int id, CreateSignOffDto dto, CancellationToken ct) =>
+        {
+            var signOff = new SignOff
+            {
+                ProjectRequestId = id,
+                Role = dto.Role,
+                ReviewerName = dto.ReviewerName,
+                Decision = dto.Decision,
+                Comment = dto.Comment,
+                TimestampUtc = DateTime.UtcNow
+            };
+            var created = await svc.AddSignOffAsync(id, signOff, ct);
+            return Results.Created($"/api/requests/{id}/signoffs/{created.Id}", created);
+        });
 
         return routes;
     }
