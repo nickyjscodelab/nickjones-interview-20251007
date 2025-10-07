@@ -6,6 +6,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{1AE8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Api", "backend\Workflow.Api\Workflow.Api.csproj", "{FAA3293F-30E4-2B7F-1D9B-EBF9B45CBC16}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{B2A6A0A5-AD39-4C34-BE12-3D0E8A7CB3C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Contracts", "shared\Workflow.Contracts\Workflow.Contracts.csproj", "{3E5D0A6F-7E5A-4C7A-91C2-3D3E4D5678AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{ED6F18F4-9E2C-4A5B-A2E9-6B93D49D46E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Wpf", "frontend\workflow-wpf\Workflow.Wpf.csproj", "{4CC5E2BE-2B6B-4C65-8F04-6BFC65E1A8F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,12 +24,22 @@ Global
 		{FAA3293F-30E4-2B7F-1D9B-EBF9B45CBC16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA3293F-30E4-2B7F-1D9B-EBF9B45CBC16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAA3293F-30E4-2B7F-1D9B-EBF9B45CBC16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC5E2BE-2B6B-4C65-8F04-6BFC65E1A8F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC5E2BE-2B6B-4C65-8F04-6BFC65E1A8F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC5E2BE-2B6B-4C65-8F04-6BFC65E1A8F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC5E2BE-2B6B-4C65-8F04-6BFC65E1A8F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E5D0A6F-7E5A-4C7A-91C2-3D3E4D5678AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E5D0A6F-7E5A-4C7A-91C2-3D3E4D5678AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E5D0A6F-7E5A-4C7A-91C2-3D3E4D5678AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E5D0A6F-7E5A-4C7A-91C2-3D3E4D5678AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FAA3293F-30E4-2B7F-1D9B-EBF9B45CBC16} = {1AE8ACA6-933B-BF2A-3671-3E2EAC007D16}
+		{4CC5E2BE-2B6B-4C65-8F04-6BFC65E1A8F5} = {ED6F18F4-9E2C-4A5B-A2E9-6B93D49D46E9}
+		{3E5D0A6F-7E5A-4C7A-91C2-3D3E4D5678AB} = {B2A6A0A5-AD39-4C34-BE12-3D0E8A7CB3C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F60A8EEE-802E-4D54-9DE2-9B77C065C271}
