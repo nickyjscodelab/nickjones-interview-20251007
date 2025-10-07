@@ -1,18 +1,3 @@
-// Domain/Entities.cs
-using System.Text.Json.Serialization;
+// Moved to shared project Workflow.Contracts (SignOff entity)
+// Intentionally left blank.
 
-namespace Demo.Workflow.Domain;
-
-public class SignOff
-{
-    public int Id { get; set; }
-    public int ProjectRequestId { get; set; }
-    
-    [JsonIgnore]
-    public ProjectRequest ProjectRequest { get; set; } = default!;
-    public Role Role { get; set; }
-    public string ReviewerName { get; set; } = default!;
-    public Decision Decision { get; set; } = Decision.Pending;
-    public string? Comment { get; set; }
-    public DateTime TimestampUtc { get; set; } = DateTime.UtcNow;
-}

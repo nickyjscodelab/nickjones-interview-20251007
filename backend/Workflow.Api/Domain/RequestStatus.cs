@@ -1,4 +1,3 @@
-// Domain/Entities.cs
-namespace Demo.Workflow.Domain;
+// Moved to shared project Workflow.Contracts (RequestStatus enum)
+// Intentionally left blank.
 
-public enum RequestStatus { Draft, Submitted, Approved, Rejected }

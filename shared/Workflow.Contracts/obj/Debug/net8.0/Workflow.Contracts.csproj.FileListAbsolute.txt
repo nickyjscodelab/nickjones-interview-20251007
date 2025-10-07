@@ -1,0 +1,12 @@
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/bin/Debug/net8.0/Workflow.Contracts.deps.json
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/bin/Debug/net8.0/Workflow.Contracts.dll
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/bin/Debug/net8.0/Workflow.Contracts.pdb
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/obj/Debug/net8.0/Workflow.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/obj/Debug/net8.0/Workflow.Contracts.AssemblyInfoInputs.cache
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/obj/Debug/net8.0/Workflow.Contracts.AssemblyInfo.cs
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/obj/Debug/net8.0/Workflow.Contracts.csproj.CoreCompileInputs.cache
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/obj/Debug/net8.0/Workflow.Contracts.sourcelink.json
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/obj/Debug/net8.0/Workflow.Contracts.dll
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/obj/Debug/net8.0/refint/Workflow.Contracts.dll
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/obj/Debug/net8.0/Workflow.Contracts.pdb
+/Users/nicholasjones/Repos/source/nickyjscodelab/nickjones-interview-20251007/shared/Workflow.Contracts/obj/Debug/net8.0/ref/Workflow.Contracts.dll

@@ -1,6 +1,2 @@
-namespace Demo.Workflow.Domain;
-
-public class RequestStatusUpdateDto
-{
-    public RequestStatus Status { get; set; }
-}
+// Moved to shared project Workflow.Contracts (RequestStatusUpdateDto)
+// Intentionally left blank.

@@ -1,4 +1,3 @@
-// Domain/Entities.cs
-namespace Demo.Workflow.Domain;
+// Moved to shared project Workflow.Contracts (Role enum)
+// Intentionally left blank.
 
-public enum Role { Engineer, QA, Manager }
